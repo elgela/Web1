@@ -1,0 +1,38 @@
+/*tipo*/
+body {
+        font-family: Arial;
+        background-color: rgb(251, 189, 189);
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        color: blue;
+    }
+    
+    h2 {
+        color: green;
+    }
+    
+    h3 {
+        text-transform: uppercase;
+        color: white;
+        text-decoration-line: underline;
+    }
+    
+    p {
+        display: block;
+        color: red;
+        text-align: center;
+    }
+
+    ol {
+        color: rgb(101, 26, 223);
+        white-space: nowrap;
+    }
+
+    /*clase*/
+    .margen {
+        margin-left: -23px;
+    }
+    
