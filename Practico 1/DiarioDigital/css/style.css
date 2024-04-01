@@ -20,7 +20,7 @@ img {
 .nombre_diario {
     color: rgb(211, 241, 14);
     text-align: left;
-    background-image: url(fondo_continentes.avif);
+    background-image: url(/DiarioDigital/images/fondo_continentes.avif);
     height: 50px;
     margin: 15px;
 }
@@ -85,7 +85,7 @@ img {
 .boton_inicio {
     width: 25px;
     height: 25px;
-    padding-left: 95%;
+    padding-left: 5%;
 }
 /*id*/
 #pregunta {
