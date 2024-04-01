@@ -2,10 +2,11 @@
 body {
     background-color: rgb(252, 216, 170);
     font-style: italic;
+    margin: 25px;
 }
 figcaption {
     opacity: 50%;
-    
+    margin-left: 12px;
 }
 footer {
     text-align: center;
@@ -20,7 +21,7 @@ img {
 .nombre_diario {
     color: rgb(211, 241, 14);
     text-align: left;
-    background-image: url(/DiarioDigital/images/fondo_continentes.avif);
+    background-image: url("/Practico 1/DiarioDigital/images/fondo_continentes.avif");
     height: 50px;
     margin: 15px;
 }
@@ -33,23 +34,28 @@ img {
 }
 .messi figure img {
     display: block;
-    width: 290px;
-}
-.dibu figure img{
-    display: block;
-    width: 410px;
+    width: 315px;
+    margin: 5px;
 }
 .diego figure img{
     display: block;
-    width: 320px;
+    width: 350px;
+    margin: 5px;
 }
 .pele figure img {
     display: block;
-    width: 310px;
+    width: 340px;
+    margin: 5px;
 }
-.img_parodi {
-    width: 55%;
+.dibu figure img{
     display: block;
+    width: 340px;
+    margin: 5px;
+}
+.parodi figure img {
+    display: block;
+    width: 5000px;
+    margin: 5px;
 }
 .link {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -92,9 +98,6 @@ img {
     color: brown;
     font-style: oblique;
     font-size: large;
-}
-#description {
-    text-rendering: auto;
 }
 #home {
     text-decoration: none;
