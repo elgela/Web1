@@ -21,7 +21,7 @@ img {
 .nombre_diario {
     color: rgb(211, 241, 14);
     text-align: left;
-    background-image: url("/Practico 1/DiarioDigital/images/fondo_continentes.avif");
+    background-image: url("/Practico 1/DiarioDigital/img/fondo_continentes.avif");
     height: 50px;
     margin: 15px;
 }
