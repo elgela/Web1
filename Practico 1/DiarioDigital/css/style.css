@@ -29,29 +29,29 @@ img {
 .division {
     border: 25px;
 }
-.messi figure img a {
+.messi figcaption img a {
     display: block;
     width: 315px;
     margin: 5px;
 }
-.diego figure img a {
+.diego figcaption img a {
     display: block;
     width: 350px;
     margin: 5px;
 }
-.pele figure img a {
+.pele figcaption img a {
     display: block;
     width: 340px;
     margin: 5px;
 }
-.dibu figure img a {
+.dibu figcaption img a {
     display: block;
     width: 340px;
     margin: 5px;
 }
-.parodi figure img {
+.parodi figcaption img {
     display: block;
-    width: 5000px;
+    width: 340px;
     margin: 5px;
 }
 .link {
@@ -71,6 +71,7 @@ img {
 }
 .description {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1px;
 }
 .subtitulo {
     color: rgb(130, 42, 165);
