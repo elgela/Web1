@@ -29,22 +29,22 @@ img {
 .division {
     border: 25px;
 }
-.messi figure img {
+.messi figure img a {
     display: block;
     width: 315px;
     margin: 5px;
 }
-.diego figure img{
+.diego figure img a {
     display: block;
     width: 350px;
     margin: 5px;
 }
-.pele figure img {
+.pele figure img a {
     display: block;
     width: 340px;
     margin: 5px;
 }
-.dibu figure img{
+.dibu figure img a {
     display: block;
     width: 340px;
     margin: 5px;
@@ -88,8 +88,15 @@ img {
 .boton_inicio {
     width: 25px;
     height: 25px;
-    padding-left: 90%;
+    margin-left: 50px;
     opacity: 65%;
+}
+.link_nombres {
+    color: rgb(255, 102, 0);
+    text-decoration: none;
+}
+.link_nombres:hover {
+    color: rgb(13, 13, 63);
 }
 /*id*/
 #pregunta {
