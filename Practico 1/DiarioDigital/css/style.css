@@ -8,10 +8,6 @@ figcaption {
     opacity: 50%;
     margin-left: 12px;
 }
-footer {
-    text-align: center;
-    opacity: 50%;
-}
 img {
     display: inline-block;
     margin-right: 20px;
@@ -27,7 +23,8 @@ img {
 }
 .foot {
     text-align: center;
-    opacity: 70%;
+    opacity: 40%;
+    margin-top: 30px;
 }
 .division {
     border: 25px;
@@ -91,7 +88,8 @@ img {
 .boton_inicio {
     width: 25px;
     height: 25px;
-    padding-left: 5%;
+    padding-left: 90%;
+    opacity: 65%;
 }
 /*id*/
 #pregunta {
