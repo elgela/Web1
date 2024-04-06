@@ -1,25 +1,21 @@
-/*tipo*/
+/*head*/
 body {
     background-color: rgb(252, 216, 170);
     font-style: italic;
     margin: 25px;
 }
-figcaption {
-    opacity: 50%;
-    margin-left: 12px;
-}
-img {
-    display: inline-block;
-    margin-right: 20px;
-    border-radius: 4.5%;
-}
-/*clase*/
+/*body*/
 .nombre_diario {
     color: rgb(211, 241, 14);
     text-align: left;
+    padding: 15px 10px;
     background-image: url("/Practico 1/DiarioDigital/img/fondo_continentes.avif");
+    border-radius: 10px;
     height: 50px;
     margin: 15px;
+}
+#home {
+    text-decoration: none;
 }
 .foot {
     text-align: center;
@@ -29,30 +25,32 @@ img {
 .division {
     border: 25px;
 }
-.messi figcaption img a {
+.messi img a {
     display: block;
     width: 315px;
     margin: 5px;
 }
-.diego figcaption img a {
+.diego img a {
     display: block;
     width: 300px;
     margin: 5px;
 }
-.pele figcaption img a {
+.pele img a {
     display: block;
     width: 340px;
     margin: 5px;
 }
-.dibu figcaption img a {
+.dibu img a {
     display: block;
     width: 340px;
     margin: 5px;
 }
-.parodi figcaption img {
+.parodi img {
     display: block;
     width: 340px;
     margin: 5px;
+    /* border: 1px solid black; */
+    border-radius: 5%;
 }
 .link {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -99,14 +97,10 @@ img {
 .link_nombres:hover {
     color: rgb(13, 13, 63);
 }
-/*id*/
 #pregunta {
     color: brown;
     font-style: oblique;
     font-size: large;
-}
-#home {
-    text-decoration: none;
 }
 #flecha_arr {
     position: relative;
