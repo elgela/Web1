@@ -1,0 +1,15 @@
+.bloque1 {
+    width: 800px;
+    height: 150px;
+    background-color: yellow;
+    border: 5px solid black;
+}
+
+.ordened {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.color-punto {
+    color: red;
+}
