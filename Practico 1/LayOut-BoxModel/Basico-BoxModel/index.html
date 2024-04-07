@@ -9,27 +9,33 @@
 </head>
 
 <body>
-    <div class="contenedor">
-        <div class="ul">
-            <h1>Bloque Box Model <!--al poner tag <h1> el tamaño de letra es el correspondiente a <h1>-->
+    <div class="title-princ">
+        <h1>Bloque Box Model</h1>
+    </div>
+    <div class="container">
+        <h1>
+            <div class="ul">
                 <ul>
-                    <li>Ancho 400px</li>
-                    <li>Alto 250px</li>
-                    <li>Padding 30px</li>
-                    <li>Padding-left 10%</li>
-                    <li>Bordes lisos-ul</li>
+                    <h3 class="subtitle">Bordes lisos-ul</h3>
+                    <li>Ancho <span class="px">400px</span></li>
+                    <li>Alto <span class="px">250px</span></li>
+                    <li>Padding <span class="px">30px</span></li>
+                    <li>Padding-left <span class="percentage">10%</span></li>
                 </ul>
-            </h1>
-        </div>
+            </div>
+        </h1>
         <div class="ol">
             <ol> <!--el tamaño de fuente es el regular, hay que darle el tamaño requerido-->
-                <li>Margin-left 75%</li>
-                <li>Ancho 50%</li>
-                <li>Padding-left 20%</li>
-                <li>Padding-top: 10%</li>
-                <li>Bordes irregulares-ol</li>
+                <h3 class="subtitle">Bordes irregulares-ol</h3>
+                <li>Margin-left <span class="percentage">75%</span></li>
+                <li>Ancho <span class="percentage">50%</span></li>
+                <li>Padding-left <span class="percentage">20%</span></li>
+                <li>Padding-top <span class="percentage">10%</span></li>
             </ol>
         </div>
+    </div>
+    <div>
+        <footer>Pie de página</footer>
     </div>
 </body>
 

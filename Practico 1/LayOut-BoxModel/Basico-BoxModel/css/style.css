@@ -1,8 +1,28 @@
+.title-princ {
+    text-align: center;
+    /* text-decoration: underline; */
+    /* text-decoration-style: double; */
+    /* text-decoration-color: crimson; */
+    background-color: color-mix(in srgb, rgb(211, 122, 122) 50%, green 60%);
+    color: rgb(42, 233, 74);
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.subtitle {
+    text-decoration: underline;
+    text-decoration-color: rgb(197, 17, 17);
+    text-decoration-style: wavy;
+    color: chocolate;
+}
+.container {
+    display: flex;
+    margin: 30px;
+}
 .ul {
-    width: 400px;
-    height: 250px;
+    width: 450px;
+    height: 450px;
     background-color: lightblue;
-    padding: 30px;
+    /* padding: 30px; */
     padding-left: 10%;
     border-top: 10px solid blue;
     border-right: 3px groove red;
@@ -11,19 +31,30 @@
 }
 .ol {
     margin-left: 75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 20px;
     font-style: oblique;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* height: 20%; */
+    /* height: 90%; */
     width: 50%;
     background-color: blueviolet;
     padding-left: 20%;
     padding-top: 10%;
     border: 20px dotted darkgoldenrod;
 }
-
-.contenedor {
-    display: flex;
-    margin: 30px;
+.px {
+    color: red;
+    font-style: oblique;
+    background-color: rgb(66, 50, 50);
+    border-radius: 10px;
+    padding: 0 4px 0.8px 4px;
+}
+.percentage {
+    color: green;
+    font-style: oblique;
+    background-color: rgb(66, 50, 50);
+    border-radius: 10px;
+    padding: 1px 4px 1px 4px;
 }
