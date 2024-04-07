@@ -1,0 +1,11 @@
+ul {
+    width: 600px;
+    height: 250px;
+    background-color: lightblue;
+    padding: 20px;
+    padding-left: 3%;
+    border-top: 10px solid blue;
+    border-right: 3px dashed red;
+    border-bottom: 30px dotted black;
+    border-left: 15px groove pink;
+}
