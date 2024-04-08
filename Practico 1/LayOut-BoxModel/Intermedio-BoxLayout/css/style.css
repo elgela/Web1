@@ -1,0 +1,43 @@
+body {
+    font-weight: bold;
+}
+  
+.content {
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    height: 350px;
+    background-color: rgb(245, 141, 6);
+    border: 1.5px solid black;
+    text-transform: uppercase;
+    margin: 7px;
+}
+
+.right {
+    width: 50%;
+    height: 350px;
+    background-color: rgb(238, 255, 0);
+    border: 1.5px solid black;
+    text-transform: uppercase;
+    margin: 7px;
+}
+
+.head {
+    width: auto;
+    height: 100px;
+    background-color: rgba(64, 143, 163, 0.664);
+    text-transform: uppercase;
+    margin: 7px;
+    border: 1.5px solid black;
+}
+
+.foot {
+    width: auto;
+    height: 100px;
+    background-color: aqua;
+    margin: 7px;
+    border: 1.5px solid black;
+    text-transform: uppercase;
+}
