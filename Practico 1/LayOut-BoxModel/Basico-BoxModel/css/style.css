@@ -1,8 +1,5 @@
 .title-princ {
     text-align: center;
-    /* text-decoration: underline; */
-    /* text-decoration-style: double; */
-    /* text-decoration-color: crimson; */
     background-color: color-mix(in srgb, rgb(211, 122, 122) 50%, green 60%);
     color: rgb(42, 233, 74);
     text-transform: uppercase;
@@ -57,4 +54,8 @@
     background-color: rgb(66, 50, 50);
     border-radius: 10px;
     padding: 1px 4px 1px 4px;
+}
+.foot {
+    opacity: 50%;
+    text-align: center;
 }
