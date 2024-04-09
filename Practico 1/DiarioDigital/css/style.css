@@ -10,15 +10,27 @@ a {
 /*body*/
 .nombre_diario {
     color: rgb(211, 241, 14);
-    text-align: left;
+    text-align: center;
     padding: 15px 10px;
     background-image: url("/Practico 1/DiarioDigital/img/fondo_continentes.avif");
     border-radius: 10px;
-    height: 50px;
-    margin: 15px;
+    height: 80px;
+    margin: 3px;
 }
-#home {
-    text-decoration: none;
+.nav-bar {
+    display: flex;
+    background-color: rgb(194, 184, 241);
+    border-radius: 10px;
+    margin: 3px;
+    word-spacing: 30px;
+}
+.lista-nav {
+    list-style-type: none;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#search {
+    position: relative;
 }
 .division {
     border: 25px;
@@ -28,11 +40,14 @@ figcaption {
     margin-left: 10px;
 }
 .messi img {
-    display: block;
-    width: 16%;
+    display: flex;
+    width: 300px;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
     border-radius: 5%;
+}
+header img {
+    display: inherit;
 }
 .diego img {
     display: block;
@@ -75,21 +90,21 @@ figcaption {
     font-family: inherit;
 }
 .noticias {
-    background-color: rgb(211, 241, 14);
-    width: fit-content;
+    width: auto;
     border-radius: 15%;
     color: rgb(126, 46, 246);
 }
 .description {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 1px;
+    color: rgb(12, 12, 12);
 }
 .subtitulo {
     color: rgb(130, 42, 165);
     font-family: Arial, Helvetica, sans-serif;
     width: fit-content;
     border-radius: 6%;
-    background-color: rgb(160, 179, 106);
+    /* background-color: rgb(160, 179, 106); */
 }
 .lista {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

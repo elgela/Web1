@@ -10,36 +10,58 @@
 </head>
 
 <body>
-    <div id="home">
-        <a href="index.html">
-            <h1 id="home" class="nombre_diario">Práctico 1 - HTML + CSS / Parte I y II</h1>
-        </a>
-    </div>
-    <hr />
-    <div>
-        <h2 class="noticias">Noticias Políticas</h2>
-        <h3><a class="link" href="renuncia.html">Renunció el director ejecutivo de la TV Pública, Juan Parodi</a></h3>
-        <a href="renuncia.html"><img src="Renuncia/juan_parodi.jpg" alt="Juan Parodi"></a>
-        <p class="description">Juan Parodi, renunció imprevistamente este viernes por la tarde, luego de</p>
-        <p class="description">haberse reunido por la mañana en Casa Rosada con el secretario de</p>
-        <p class="description">Comunicación, Eduardo Serenellini.</p>
-    </div>
-    <hr>
-    <div>
-        <h2 class="noticias">Noticias Deportivas</h2>
-        <h3><a class="link" href="subasta.html">Lanzan una subasta solidaria con camisetas de Maradona, Pelé y Messi, y
-                un guante del Dibu Martínez, entre otras joyas</a></h3>
-        <div><a class="a" href="subasta.html">
-                <img src="Subasta/camiseta_messi.jpg" alt="Camiseta de Messi">
-                <img src="Subasta/camiseta_maradona.jpg" alt="Camiseta de Maradona">
-                <img src="Subasta/guante_dibu_martinez.jpg" alt="Dibu Martinez">
-                <img src="Subasta/camiseta_pele.jpg" alt="Camiseta de Pele">
-            </a>
+    <header>
+        <div class="container">
+            <!-- <a href="index.html"> -->
+                <h1 class="nombre_diario">Práctico 1 - HTML + CSS / Parte I y II</h1>
+            <!-- </a> -->
+            <div>
+                <nav class="nav-bar">
+                    <ul class="lista-nav">
+                        <li>
+                            <a href="#">Inicio</a>
+                            <a href="renuncia.html">Políticas</a>
+                            <a href="subasta.html">Subasta</a>
+                            <a href="">Nosotros</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <p class="description">¿A quién no le gustaría tener una camiseta de Messi? ¿Y del Diego? ¿Y de Pelé? ¿Probarse
-            los guantes del Dibu Martínez? </p>
-        <p class="description">Ya se encuentra disponible de manera online la nueva subasta organizada por
-            Matchday.</p>
+    </header>
+    <hr />
+    <div class="noticias">
+        <div>
+            <h2 class="politicas">Noticias Políticas</h2>
+            <h3><a class="link" href="renuncia.html">Renunció el director ejecutivo de la TV Pública, Juan Parodi</a>
+            </h3>
+            <a href="renuncia.html"><img src="Renuncia/juan_parodi.jpg" alt="Juan Parodi"></a>
+            <p class="description">Juan Parodi, renunció imprevistamente este viernes por la tarde, luego de</p>
+            <p class="description">haberse reunido por la mañana en Casa Rosada con el secretario de</p>
+            <p class="description">Comunicación, Eduardo Serenellini.</p>
+        </div>
+        <hr>
+        <div class="deportivas">
+            <h2>Noticias Deportivas</h2>
+            <h3><a class="link" href="subasta.html">Lanzan una subasta solidaria con camisetas de Maradona, Pelé y
+                    Messi, y
+                    un guante del Dibu Martínez, entre otras joyas</a></h3>
+            <div>
+                <a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank"><img
+                        src="Subasta/camiseta_messi.jpg" alt="Camiseta de Messi"></a>
+                <a href="https://es.wikipedia.org/wiki/Diego_Maradona" target="_blank"><img
+                        src="Subasta/camiseta_maradona.jpg" alt="Camiseta de Maradona"></a>
+                <a href="https://es.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez" target="_blank"><img
+                        src="Subasta/guante_dibu_martinez.jpg" alt="Dibu Martinez"></a>
+                <a href="https://es.wikipedia.org/wiki/Pel%C3%A9" target="_blank"><img src="Subasta/camiseta_pele.jpg"
+                        alt="Camiseta de Pele"></a>
+            </div>
+            <p class="description">¿A quién no le gustaría tener una camiseta de Messi? ¿Y del Diego? ¿Y de Pelé?
+                ¿Probarse
+                los guantes del Dibu Martínez? </p>
+            <p class="description">Ya se encuentra disponible de manera online la nueva subasta organizada por
+                Matchday.</p>
+        </div>
     </div>
     <div>
         <footer class="foot">
