@@ -7,6 +7,7 @@ body {
 a {
     text-decoration: none;
 }
+
 /*body*/
 .nombre_diario {
     color: rgb(211, 241, 14);
@@ -19,25 +20,43 @@ a {
 }
 .nav-bar {
     display: flex;
-    background-color: rgb(194, 184, 241);
+    background-color: rgba(194, 185, 233, 0.395);
     border-radius: 10px;
-    margin: 3px;
-    word-spacing: 30px;
+    margin-top: 10px;
+    word-spacing: 150px;
 }
 .lista-nav {
     list-style-type: none;
-    font-size: 15px;
+    font-size: 21px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.color-text-nav {
+    color: rgb(235, 82, 27);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 #search {
-    position: relative;
+    margin-left: 700px;
+    font-size: 21px;
+    background-color: rgba(150, 143, 222, 0.258);
 }
-.division {
-    border: 25px;
+.news-style {
+    width: auto;
+    border-radius: 15%;
+    color: rgb(126, 46, 246);
 }
-figcaption {
-    opacity: 50%;
-    margin-left: 10px;
+.link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(154, 44, 25);
+}
+.photo-description {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1px;
+    color: rgb(12, 12, 12);
+}
+#pregunta {
+    color: brown;
+    font-style: oblique;
+    font-size: large;
 }
 .messi img {
     display: flex;
@@ -80,52 +99,20 @@ header img {
 .p_parodi {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.link {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(154, 44, 25);
-}
 .link:hover {
     color: rgb(225, 77, 77);
     text-transform: unset;
     font-family: inherit;
-}
-.noticias {
-    width: auto;
-    border-radius: 15%;
-    color: rgb(126, 46, 246);
-}
-.description {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 1px;
-    color: rgb(12, 12, 12);
 }
 .subtitulo {
     color: rgb(130, 42, 165);
     font-family: Arial, Helvetica, sans-serif;
     width: fit-content;
     border-radius: 6%;
-    /* background-color: rgb(160, 179, 106); */
-}
-.lista {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.boton_inicio {
-    width: 25px;
-    height: 25px;
-    margin-left: 50px;
-    opacity: 65%;
-}
-.link_nombres {
-    color: rgb(255, 102, 0);
-    text-decoration: none;
 }
 .link_nombres:hover {
-    color: rgb(13, 13, 63);
-}
-#pregunta {
-    color: brown;
-    font-style: oblique;
-    font-size: large;
+    color: rgb(47, 13, 63);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .foot {
     text-align: center;

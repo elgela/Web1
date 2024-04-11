@@ -11,18 +11,19 @@
 
 <body>
     <header>
-        <div class="container">
-            <!-- <a href="index.html"> -->
+        <div>
+            <a href="index.html" id="home">
                 <h1 class="nombre_diario">Práctico 1 - HTML + CSS / Parte I y II</h1>
-            <!-- </a> -->
+            </a>
             <div>
                 <nav class="nav-bar">
                     <ul class="lista-nav">
                         <li>
-                            <a href="#">Inicio</a>
-                            <a href="renuncia.html">Políticas</a>
-                            <a href="subasta.html">Subasta</a>
-                            <a href="">Nosotros</a>
+                            <a href="index.html" class="color-text-nav">Inicio</a>
+                            <a href="renuncia.html" class="color-text-nav">Políticas</a>
+                            <a href="subasta.html" class="color-text-nav">Subasta</a>
+                            <a href="" class="color-text-nav">Nosotros</a>
+                            <input type="search" placeholder="buscar..." id="search">
                         </li>
                     </ul>
                 </nav>
@@ -30,18 +31,18 @@
         </div>
     </header>
     <hr />
-    <div class="noticias">
+    <div class="news-style">
         <div>
-            <h2 class="politicas">Noticias Políticas</h2>
+            <h2>Noticias Políticas</h2>
             <h3><a class="link" href="renuncia.html">Renunció el director ejecutivo de la TV Pública, Juan Parodi</a>
             </h3>
             <a href="renuncia.html"><img src="Renuncia/juan_parodi.jpg" alt="Juan Parodi"></a>
-            <p class="description">Juan Parodi, renunció imprevistamente este viernes por la tarde, luego de</p>
-            <p class="description">haberse reunido por la mañana en Casa Rosada con el secretario de</p>
-            <p class="description">Comunicación, Eduardo Serenellini.</p>
+            <p class="photo-description">Juan Parodi, renunció imprevistamente este viernes por la tarde, luego de</p>
+            <p class="photo-description">haberse reunido por la mañana en Casa Rosada con el secretario de</p>
+            <p class="photo-description">Comunicación, Eduardo Serenellini.</p>
         </div>
         <hr>
-        <div class="deportivas">
+        <div>
             <h2>Noticias Deportivas</h2>
             <h3><a class="link" href="subasta.html">Lanzan una subasta solidaria con camisetas de Maradona, Pelé y
                     Messi, y
@@ -56,10 +57,10 @@
                 <a href="https://es.wikipedia.org/wiki/Pel%C3%A9" target="_blank"><img src="Subasta/camiseta_pele.jpg"
                         alt="Camiseta de Pele"></a>
             </div>
-            <p class="description">¿A quién no le gustaría tener una camiseta de Messi? ¿Y del Diego? ¿Y de Pelé?
+            <p id="pregunta">¿A quién no le gustaría tener una camiseta de Messi? ¿Y del Diego? ¿Y de Pelé?
                 ¿Probarse
                 los guantes del Dibu Martínez? </p>
-            <p class="description">Ya se encuentra disponible de manera online la nueva subasta organizada por
+            <p id="pregunta">Ya se encuentra disponible de manera online la nueva subasta organizada por
                 Matchday.</p>
         </div>
     </div>
