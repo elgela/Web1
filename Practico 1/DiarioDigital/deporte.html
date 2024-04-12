@@ -11,22 +11,26 @@
 
 <body>
     <header>
-        <a id="arriba"></a>
-        <a href="index.html" id="home">
-            <h1 class="nombre_diario">Práctico 1 - HTML + CSS / Parte I y II</h1>
-        </a>
         <div>
-            <nav class="nav-bar">
-                <ul class="lista-nav">
-                    <li class="li-text">
-                        <a href="index.html" class="color-text-nav">Inicio</a>
-                        <a href="television.html" class="color-text-nav">Televisión</a>
-                        <a href="deporte.html" class="color-text-nav">Deporte</a>
-                        <a href="" class="color-text-nav">Nosotros</a>
-                        <input type="text" id="buscador" placeholder="buscar...">
-                    </li>
-                </ul>
-            </nav>
+            <a href="index.html" id="home">
+                <h1 class="nombre_diario">Práctico 1 - HTML + CSS / Parte I y II</h1>
+            </a>
+            <div>
+                <nav class="nav-bar">
+                    <ul class="lista-nav">
+                        <li>
+                            <a href="index.html" class="color-text-nav">Inicio</a>
+                            <a href="television.html" class="color-text-nav">Televisión</a>
+                            <a href="deporte.html" class="color-text-nav">Deporte</a>
+                            <a href="" class="color-text-nav">Nosotros</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="buscador">
+                    <input type="text" id="buscador" placeholder="buscar...">
+                    <button id="buscador-button">Enviar</button>
+                </div>
+            </div>
         </div>
     </header>
     <hr>
@@ -38,7 +42,7 @@
     </div>
     <div class="messi">
         <figure>
-            <a href="https://es.wikipedia.org/wiki/Lionel_Messi" class="imagen" target="_blank"><img src="Subasta/camiseta_messi.jpg"
+            <a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank"><img src="Subasta/camiseta_messi.jpg"
                     alt="Camiseta Messi"></a>
             <figcaption>La camiseta de Messi que subasta Matchday</figcaption>
         </figure>

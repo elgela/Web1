@@ -36,11 +36,24 @@ a {
     font-size: larger;
 }
 #buscador {
+    display: flex;
     color: rgb(13, 13, 13);
-    font-size: 21px;
+    font-size: 1.5rem;
     background-color: rgba(150, 143, 222, 0.258);
     border: none;
-    margin-left: 450px;
+    border-radius: 10px;
+    padding: 0.5%;
+    margin: 1% 80% 0 81%;
+}
+#buscador-button {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(13, 13, 13);
+    background-color: rgba(150, 143, 222, 0.258);
+    border-radius: 15%;
+    padding: 0.2% 1%;
+    margin: 1% 80% 0 81%;
 }
 .noticias-estilo {
     width: auto;
