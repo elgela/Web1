@@ -33,16 +33,20 @@ a {
 .color-text-nav {
     color: rgb(235, 82, 27);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
 }
-#search {
-    margin-left: 700px;
+#buscador {
+    color: rgb(13, 13, 13);
+    font-weight: bold;
     font-size: 21px;
     background-color: rgba(150, 143, 222, 0.258);
+    border: none;
+    margin-left: 450px;
 }
 .noticias-style {
     width: auto;
     border-radius: 15%;
-    color: rgb(126, 46, 246);
+    color: rgb(82, 61, 112);
 }
 .link {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -70,32 +74,33 @@ figcaption {
     border: 1px solid rgb(118, 101, 101);
     border-radius: 5%;
 }
-header img {
+/* header img {
     display: inherit;
-}
+} */
 .diego img {
-    display: block;
+    display: flex;
     width: 300px;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
     border-radius: 5%;
+    
 }
 .pele img {
-    display: block;
+    display: flex;
     width: 300px;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
     border-radius: 5%;
 }
 .dibu img {
-    display: block;
+    display: flex;
     width: 300px;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
     border-radius: 5%;
 }
 .parodi img {
-    display: block;
+    display: flex;
     width: 600px;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
@@ -133,5 +138,5 @@ header img {
     border-radius: 50%;
     margin: 20px;
     border: 2px solid #fff;
-    display: block;
+    display: flex;
 }
