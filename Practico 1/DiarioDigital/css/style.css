@@ -37,13 +37,12 @@ a {
 }
 #buscador {
     color: rgb(13, 13, 13);
-    font-weight: bold;
     font-size: 21px;
     background-color: rgba(150, 143, 222, 0.258);
     border: none;
     margin-left: 450px;
 }
-.noticias-style {
+.noticias-estilo {
     width: auto;
     border-radius: 15%;
     color: rgb(82, 61, 112);
