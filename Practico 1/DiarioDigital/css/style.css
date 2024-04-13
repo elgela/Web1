@@ -7,25 +7,27 @@ body {
 a {
     text-decoration: none;
 }
-
 /*body*/
 .nombre_diario {
+    display: flex;
     color: rgb(211, 241, 14);
     text-align: center;
-    padding: 15px 10px;
+    padding: 1%;
     background-image: url("/Practico 1/DiarioDigital/img/fondo_continentes.avif");
     border-radius: 10px;
     height: 80px;
-    margin: 3px;
+    margin: 0.5%;
 }
 .nav-bar {
     display: flex;
     background-color: rgba(194, 185, 233, 0.395);
     border-radius: 10px;
-    margin-top: 10px;
-    word-spacing: 150px;
+    margin: 0.5%;
+    margin-top: 1%;
+    word-spacing: 10rem;
 }
 .lista-nav {
+    display: flex;
     list-style-type: none;
     font-size: 21px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
