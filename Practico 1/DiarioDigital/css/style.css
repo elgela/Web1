@@ -2,14 +2,34 @@
 body {
     background-color: rgb(252, 216, 170);
     font-style: italic;
-    margin: 25px;
+    margin: 20px;
+    font-size: x-large;
 }
 a {
     text-decoration: none;
 }
-/*body*/
+h2 {
+    color: rgb(59, 14, 31);
+}
+header {
+    position: fixed;
+    margin: 0 20% 0 27%;
+}
+.div-index {
+    text-align: center;
+    position: block;
+    margin-top: 10em;
+}
+.div-index2 {
+    text-align: center;
+    position: block;
+    margin-top: 5em;
+}
+ul {
+    text-align: left;
+}
 .nombre_diario {
-    display: flex;
+    display: block;
     color: rgb(211, 241, 14);
     text-align: center;
     padding: 1%;
@@ -38,15 +58,14 @@ a {
     font-size: 1.3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#buscador {
+.buscador {
     display: flex;
-    color: rgb(13, 13, 13);
-    font-size: 130%;
-    background-color: rgba(150, 143, 222, 0.258);
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
     border: none;
     border-radius: 10px;
-    padding: 0.5%;
-    margin: auto;
+    padding: 1%;
+    margin-left: 90%;
     margin-top: 1%;
 }
 #buscador-button {
@@ -54,12 +73,11 @@ a {
     font-weight: bold;
     font-size: 1.2rem;
     color: rgb(13, 13, 13);
-    background-color: rgba(150, 143, 222, 0.258);
+    background-color: rgba(194, 185, 233, 0.395);
     border-radius: 15%;
-    padding: 0.2% 1%;
-    margin: auto;
     margin-top: 1%;
 }
+/*body*/
 .noticias-estilo {
     width: auto;
     border-radius: 15%;
@@ -84,7 +102,7 @@ figcaption {
     font-size: large;
 }
 /*subasta*/
-.messi img {
+.messi {
     display: flex;
     width: 300px;
     margin: 5px;
@@ -94,7 +112,7 @@ figcaption {
 /* header img {
     display: inherit;
 } */
-.diego img {
+.diego {
     display: flex;
     width: 300px;
     margin: 5px;
@@ -102,21 +120,21 @@ figcaption {
     border-radius: 5%;
     
 }
-.pele img {
+.pele {
     display: flex;
     width: 300px;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
     border-radius: 5%;
 }
-.dibu img {
+.dibu {
     display: flex;
     width: 300px;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
     border-radius: 5%;
 }
-.parodi img {
+.parodi {
     display: flex;
     width: 600px;
     margin: 5px;
@@ -135,7 +153,6 @@ figcaption {
     color: rgb(130, 42, 165);
     font-family: Arial, Helvetica, sans-serif;
     width: fit-content;
-    border-radius: 6%;
 }
 .link_nombres:hover {
     color: rgb(47, 13, 63);
