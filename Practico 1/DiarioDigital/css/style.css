@@ -79,7 +79,8 @@ td {
     /* font-size: xx-large; */
     color: rgb(211, 241, 14);
     text-align: center;
-    padding: 1%;
+    padding: 1.8%;
+    padding-bottom: 4%;
     background-image: url("/Practico 1/DiarioDigital/img/fondo_continentes.avif");
     border-radius: 10px;
     height: 80px;
