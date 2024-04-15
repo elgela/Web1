@@ -17,12 +17,16 @@ h1 {
 h2 {
     font-size: 150%;
     color: rgb(59, 14, 31);
+    margin: 19% 5% 10% 5%;
 }
 h3 {
     font-size: 130%;
+    margin: 5%;
+    margin-top: 1%;
 }
 h4 {
     font-size: 110%;
+    margin: 4%;
 }
 header {
     position: fixed;
@@ -43,24 +47,32 @@ ul {
 }
 .publicidad {
     display: flex;
-    margin-left: 85%;
-    background-color: cornsilk;
+    /* margin-left: 83%; */
+}
+table {
+    margin-left: 79%;
+    position: fixed;
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 10px;
 }
 thead {
     background-color: rgb(237, 111, 8);
     border-bottom: 1px solid rgb(12, 12, 12);
 }
-tbody tr .moneda {
+tr .moneda {
     border: 1px solid rgb(187, 31, 31);
     font-weight: bold;
 }
 td {
     padding: 11px;
 }
-table {
+.logotipo {
+    display: flex;
     position: fixed;
-    border: 2px solid rgb(12, 12, 12);
-    border-radius: 10px;
+    width: 17%;
+    height: 25%;
+    margin-left: 1%;
+    border-radius: 14%;
 }
 .nombre_diario {
     display: block;
@@ -72,15 +84,6 @@ table {
     border-radius: 10px;
     height: 80px;
     margin: 0.5%;
-}
-.logotipo {
-    display: flex;
-    position: fixed;
-    width: 17%;
-    height: 25%;
-    margin-left: 1%;
-    border-radius: 14%;
-    border: steelblue;
 }
 .color-text-nav {
     color: rgb(235, 82, 27);
@@ -107,10 +110,8 @@ table {
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
-    /* border-radius: 10px; */
     padding: 1%;
-    margin-left: 36%;
-    margin-top: 1%;
+    margin-left: 24%;
 }
 #buscador-button {
     display: flex;
