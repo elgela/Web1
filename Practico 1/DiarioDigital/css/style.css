@@ -1,4 +1,3 @@
-/*head*/
 body {
     background-color: rgb(252, 216, 170);
     font-style: italic;
@@ -28,8 +27,30 @@ header {
 ul {
     text-align: left;
 }
+.publicidad {
+    display: flex;
+    margin-left: 85%;
+    background-color: cornsilk;
+}
+thead {
+    background-color: rgb(237, 111, 8);
+    border-bottom: 1px solid rgb(12, 12, 12);
+}
+tbody tr .moneda {
+    border: 1px solid rgb(187, 31, 31);
+    font-weight: bold;
+}
+td {
+    padding: 11px;
+}
+table {
+    position: fixed;
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 10px;
+}
 .nombre_diario {
     display: block;
+    font-size: xx-large;
     color: rgb(211, 241, 14);
     text-align: center;
     padding: 1%;
@@ -37,6 +58,15 @@ ul {
     border-radius: 10px;
     height: 80px;
     margin: 0.5%;
+}
+.logotipo {
+    display: flex;
+    position: fixed;
+    width: 17%;
+    height: 25%;
+    margin-left: 1%;
+    border-radius: 14%;
+    border: steelblue;
 }
 .color-text-nav {
     color: rgb(235, 82, 27);
@@ -63,19 +93,19 @@ ul {
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 1%;
-    margin-left: 90%;
+    margin-left: 36%;
     margin-top: 1%;
 }
 #buscador-button {
     display: flex;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: rgb(13, 13, 13);
     background-color: rgba(194, 185, 233, 0.395);
     border-radius: 15%;
-    margin-top: 1%;
+    margin-top: 0%;
 }
 /*body*/
 .noticias-estilo {
@@ -146,13 +176,12 @@ figcaption {
 }
 .link:hover {
     color: rgb(225, 77, 77);
-    text-transform: unset;
+    /* text-transform: unset; */
     font-family: inherit;
 }
 .subtitulo {
-    color: rgb(130, 42, 165);
+    color: rgb(57, 68, 14);
     font-family: Arial, Helvetica, sans-serif;
-    width: fit-content;
 }
 .link_nombres:hover {
     color: rgb(47, 13, 63);
