@@ -47,7 +47,70 @@ ul {
 }
 .publicidad {
     display: flex;
+
     /* margin-left: 83%; */
+}
+.logotipo {
+    display: grid;
+    position: fixed;
+    width: 17%;
+    height: 25%;
+    margin-left: 1%;
+    border-radius: 14%;
+}
+/* .nav-bar {
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    background-color: rgba(194, 185, 233, 0.395);
+    border-radius: 10px;
+    margin-top: 1%;
+    margin: 1px;
+} */
+.nombre_diario {
+    display: block;
+    /* font-size: xx-large; */
+    color: rgb(211, 241, 14);
+    text-align: center;
+    padding: 1.8%;
+    padding-bottom: 4%;
+    background-image: url("/Practico 1/DiarioDigital/img/fondo_continentes.avif");
+    border-radius: 10px;
+    height: 80px;
+    margin: 0.5%;
+    margin-left: auto;
+}
+.lista-nav {
+    display: contents;
+    position: static;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    word-spacing: 4rem;
+    text-align: center;
+    list-style-type: none;
+    margin-left: auto;
+}
+.color-text-nav {
+    color: rgb(235, 82, 27);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+.buscador {
+    display: flex;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 2%;
+    margin-left: auto;
+}
+#buscador-button {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(13, 13, 13);
+    background-color: rgba(194, 185, 233, 0.395);
+    border-radius: 15%;
+    margin-top: 0%;
 }
 table {
     margin-left: 79%;
@@ -65,63 +128,6 @@ tr .moneda {
 }
 td {
     padding: 11px;
-}
-.logotipo {
-    display: flex;
-    position: fixed;
-    width: 17%;
-    height: 25%;
-    margin-left: 1%;
-    border-radius: 14%;
-}
-.nombre_diario {
-    display: block;
-    /* font-size: xx-large; */
-    color: rgb(211, 241, 14);
-    text-align: center;
-    padding: 1.8%;
-    padding-bottom: 4%;
-    background-image: url("/Practico 1/DiarioDigital/img/fondo_continentes.avif");
-    border-radius: 10px;
-    height: 80px;
-    margin: 0.5%;
-}
-.color-text-nav {
-    color: rgb(235, 82, 27);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-}
-.nav-bar {
-    display: flex;
-    background-color: rgba(194, 185, 233, 0.395);
-    border-radius: 10px;
-    margin: 1px;
-    margin-top: 1%;
-    word-spacing: 10rem;
-}
-.lista-nav {
-    display: flex;
-    font-size: 1%;
-    list-style-type: none;
-    font-size: 1.3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.buscador {
-    display: flex;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    border: none;
-    padding: 1%;
-    margin-left: 24%;
-}
-#buscador-button {
-    display: flex;
-    font-weight: bold;
-    font-size: 1.3rem;
-    color: rgb(13, 13, 13);
-    background-color: rgba(194, 185, 233, 0.395);
-    border-radius: 15%;
-    margin-top: 0%;
 }
 /*body*/
 .noticias-estilo {
