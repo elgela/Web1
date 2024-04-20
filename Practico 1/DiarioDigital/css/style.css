@@ -15,12 +15,12 @@ h1 {
     font-size: 170%;
 }
 h2 {
-    font-size: 150%;
+    font-size: 120%;
     color: rgb(59, 14, 31);
     margin: 19% 5% 10% 5%;
 }
 h3 {
-    font-size: 130%;
+    font-size: 150%;
     margin: 5%;
     margin-top: 1%;
 }
@@ -37,24 +37,22 @@ header {
     position: block;
     margin-top: 10em;
 }
-.div-index2 {
+.div-depor {
     text-align: center;
     position: block;
-    margin-top: 5em;
+    /* margin-top: 1em; */
 }
 ul {
     text-align: left;
 }
 .publicidad {
     display: flex;
-
-    /* margin-left: 83%; */
 }
 .logotipo {
-    display: grid;
+    /* display: grid; */
     position: fixed;
     width: 17%;
-    height: 25%;
+    height: au;
     margin-left: 1%;
     border-radius: 14%;
 }
@@ -74,7 +72,7 @@ ul {
     text-align: center;
     padding: 1.8%;
     padding-bottom: 4%;
-    background-image: url("/Practico 1/DiarioDigital/img/fondo_continentes.avif");
+    background-image: url("/DiarioDigital/img/fondo_continentes.avif");
     border-radius: 10px;
     height: 80px;
     margin: 0.5%;
@@ -149,43 +147,47 @@ figcaption {
     padding-left: 1%;
 }
 #pregunta {
+    display: inline;
     color: brown;
     font-style: oblique;
     font-size: large;
 }
 /*subasta*/
-.messi {
+.subasta a img {
+    display: inline;
+    /* padding: 1%; */
+    width: 16%;
+    border-radius: 50%;
+    justify-content: space-between;
+}
+/* .messi {
     display: flex;
-    width: 300px;
+    width: 3%;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
     border-radius: 5%;
-}
-/* header img {
-    display: inherit;
 } */
-.diego {
+/* .diego {
+    display: flex;
+    width: 10%;
+    margin: 5px;
+    border: 1px solid rgb(118, 101, 101);
+    border-radius: 5%;
+} */
+/* .pele {
     display: flex;
     width: 300px;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
     border-radius: 5%;
-    
-}
-.pele {
+} */
+/* .dibu {
     display: flex;
     width: 300px;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
     border-radius: 5%;
-}
-.dibu {
-    display: flex;
-    width: 300px;
-    margin: 5px;
-    border: 1px solid rgb(118, 101, 101);
-    border-radius: 5%;
-}
+} */
 .parodi {
     display: flex;
     width: 600px;
