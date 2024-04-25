@@ -12,7 +12,15 @@ span {
     font-weight: bolder;
 }
 h1 {
-    font-size: 170%;
+    display: grid;
+    font-size: 120%;
+    color: rgb(245, 241, 44);
+    text-align: center;
+    background-image: url("/Practico\ 1/DiarioDigital/img/fondo_continentes.avif");
+    opacity: 90%;
+    border-radius: 4px;
+    height: 70px;
+    margin: 2%;
 }
 h2 {
     font-size: 120%;
@@ -30,7 +38,11 @@ h4 {
 }
 header {
     position: fixed;
-    margin: 0 20% 0 27%;
+    margin: 0 0 0 30%;
+}
+.titulo {
+    display: grid;
+    margin-top: -29%;
 }
 .div-telev {
     text-align: center;
@@ -48,35 +60,21 @@ ul {
 .publicidad {
     display: flex;
 }
-.logotipo {
-    /* display: grid; */
-    position: fixed;
+.logotipo img {
+    display: flex;
     width: 17%;
-    height: au;
-    margin-left: 1%;
+    height: 15%;
     border-radius: 14%;
+    margin: 7% 0 0 12%;
 }
-/* .nav-bar {
+.nav-bar {
     display: flex;
     text-align: center;
     margin-left: auto;
     background-color: rgba(194, 185, 233, 0.395);
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 1%;
     margin: 1px;
-} */
-.nombre_diario {
-    display: block;
-    /* font-size: xx-large; */
-    color: rgb(211, 241, 14);
-    text-align: center;
-    padding: 1.8%;
-    padding-bottom: 4%;
-    background-image: url("/Practico\ 1/DiarioDigital/img/fondo_continentes.avif");
-    border-radius: 10px;
-    height: 80px;
-    margin: 0.5%;
-    margin-left: auto;
 }
 .lista-nav {
     display: contents;
@@ -111,21 +109,18 @@ ul {
     margin-top: 0%;
 }
 table {
-    margin-left: 79%;
+    margin-left: 73%;
+    margin-top: 12%;
     position: fixed;
-    border: 2px solid rgb(12, 12, 12);
-    border-radius: 10px;
 }
-thead {
+th {
     background-color: rgb(237, 111, 8);
-    border-bottom: 1px solid rgb(12, 12, 12);
-}
-tr .moneda {
-    border: 1px solid rgb(187, 31, 31);
-    font-weight: bold;
+    border: 2px solid black;
 }
 td {
     padding: 11px;
+    border: 1px solid black;
+
 }
 /*body*/
 .noticias-estilo {
