@@ -4,28 +4,82 @@ body {
     margin: 20px;
     font-size: x-large;
 }
-a {
-    text-decoration: none;
+header {
+    text-align: center;
 }
-span {
-    font-size: xx-large;
-    font-weight: bolder;
+.logotipo {
+    width: 155px;
+    height: 15%;
+    border-radius: 14%;
 }
-h1 {
-    display: grid;
-    font-size: 120%;
+.titulo {
+    display: inline-flex;
+    /* text-align: center; */
+    /* font-size: 120%; */
     color: rgb(245, 241, 44);
     text-align: center;
-    background-image: url("/Practico\ 1/DiarioDigital/img/fondo_continentes.avif");
-    opacity: 90%;
-    border-radius: 4px;
-    height: 70px;
-    margin: 2%;
+    background-image: url("/DiarioDigital/img/fondo_continentes.avif");
+    opacity: 80%;
+    border-radius: 9px;
+    padding: 15px;
+    margin-top: 1px;
+}
+.nav-bar {
+    display: inline-flex;
+    text-align: center;
+    background-color: rgba(194, 185, 233, 0.395);
+    border-radius: 6px;
+    padding: 6px;
+}
+.lista-nav {
+    display: contents;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    word-spacing: 4rem;
+    text-align: center;
+    list-style-type: none;
+    margin-left: auto;
+}
+.buscador {
+    display: inline-flex;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    margin-top: 20px;
+}
+.buscador .buscador-button {
+    display: grid;
+    font-weight: bold;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(13, 13, 13);
+    background-color: rgba(194, 185, 233, 0.395);
+    border-radius: 15%;
+    margin: 0 0 0 6%;
+}
+.buscador-button :hover {
+    background-color: coral;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.publicidad {
+    margin-top: 10px;
+}
+table {
+    margin-left: 39%;
+    /* margin-top: 12%; */
+}
+th {
+    background-color: rgb(237, 111, 8);
+    border: 2px solid black;
+}
+td {
+    padding: 11px;
+    border: 1px solid black;
 }
 h2 {
-    font-size: 120%;
+    font-size: 3em;
     color: rgb(59, 14, 31);
-    margin: 19% 5% 10% 5%;
 }
 h3 {
     font-size: 150%;
@@ -36,18 +90,12 @@ h4 {
     font-size: 110%;
     margin: 4%;
 }
-header {
-    position: fixed;
-    margin: 0 0 0 30%;
-}
-.titulo {
-    display: grid;
-    margin-top: -29%;
+span {
+    font-size: xx-large;
+    font-weight: bolder;
 }
 .div-telev {
     text-align: center;
-    position: block;
-    margin-top: 10em;
 }
 .div-depor {
     text-align: center;
@@ -57,70 +105,10 @@ header {
 ul {
     text-align: left;
 }
-.publicidad {
-    display: flex;
-}
-.logotipo img {
-    display: flex;
-    width: 17%;
-    height: 15%;
-    border-radius: 14%;
-    margin: 7% 0 0 12%;
-}
-.nav-bar {
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    background-color: rgba(194, 185, 233, 0.395);
-    border-radius: 5px;
-    margin-top: 1%;
-    margin: 1px;
-}
-.lista-nav {
-    display: contents;
-    position: static;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.2rem;
-    word-spacing: 4rem;
-    text-align: center;
-    list-style-type: none;
-    margin-left: auto;
-}
 .color-text-nav {
     color: rgb(235, 82, 27);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
-}
-.buscador {
-    display: flex;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    border: none;
-    padding: 2%;
-    margin-left: auto;
-}
-#buscador-button {
-    display: flex;
-    font-weight: bold;
-    font-size: 1.3rem;
-    color: rgb(13, 13, 13);
-    background-color: rgba(194, 185, 233, 0.395);
-    border-radius: 15%;
-    margin-top: 0%;
-}
-table {
-    margin-left: 73%;
-    margin-top: 12%;
-    position: fixed;
-}
-th {
-    background-color: rgb(237, 111, 8);
-    border: 2px solid black;
-}
-td {
-    padding: 11px;
-    border: 1px solid black;
-
 }
 /*body*/
 .noticias-estilo {
@@ -194,6 +182,7 @@ figcaption {
     border: 2px solid #fff;
     display: flex;
 }
+
 /* .messi {
     display: flex;
     width: 3%;
