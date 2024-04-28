@@ -62,12 +62,11 @@ header {
     cursor: pointer;
     font-weight: bolder;
 }
-.publicidad {
+.publ-centro {
     margin-top: 10px;
 }
 table {
     margin-left: 39%;
-    /* margin-top: 12%; */
 }
 th {
     background-color: rgb(237, 111, 8);
@@ -143,6 +142,10 @@ figcaption {
     border-radius: 50%;
     justify-content: space-between;
 }
+.subasta img:hover {
+    transform: scale(1.3);
+    overflow: hidden;
+}
 .img-parodi {
     display: inline;
     width: 600px;
@@ -155,7 +158,6 @@ figcaption {
 }
 .link:hover {
     color: rgb(225, 77, 77);
-    /* text-transform: unset; */
     font-family: inherit;
 }
 .subtitulo {
@@ -171,6 +173,12 @@ figcaption {
     opacity: 40%;
     margin-top: 30px;
 }
+.parodi :hover {
+    transform: scale(1.1);
+}
+.parodi {
+    overflow: hidden;
+}
 #flecha_arr {
     position: relative;
     top: -20;
@@ -182,32 +190,3 @@ figcaption {
     border: 2px solid #fff;
     display: flex;
 }
-
-/* .messi {
-    display: flex;
-    width: 3%;
-    margin: 5px;
-    border: 1px solid rgb(118, 101, 101);
-    border-radius: 5%;
-} */
-/* .diego {
-    display: flex;
-    width: 10%;
-    margin: 5px;
-    border: 1px solid rgb(118, 101, 101);
-    border-radius: 5%;
-} */
-/* .pele {
-    display: flex;
-    width: 300px;
-    margin: 5px;
-    border: 1px solid rgb(118, 101, 101);
-    border-radius: 5%;
-} */
-/* .dibu {
-    display: flex;
-    width: 300px;
-    margin: 5px;
-    border: 1px solid rgb(118, 101, 101);
-    border-radius: 5%;
-} */
