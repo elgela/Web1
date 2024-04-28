@@ -14,8 +14,6 @@ header {
 }
 .titulo {
     display: inline-flex;
-    /* text-align: center; */
-    /* font-size: 120%; */
     color: rgb(245, 241, 44);
     text-align: center;
     background-image: url("/DiarioDigital/img/fondo_continentes.avif");
@@ -25,7 +23,6 @@ header {
     margin-top: 1px;
 }
 .nav-bar {
-    display: inline-flex;
     text-align: center;
     background-color: rgba(194, 185, 233, 0.395);
     border-radius: 6px;
@@ -47,20 +44,23 @@ header {
     border: none;
     margin-top: 20px;
 }
-.buscador .buscador-button {
-    display: grid;
+.buscador:hover {
+    transform: scale(1.1);
+}
+.buscador-button {
+    display: flex;
     font-weight: bold;
     font-size: 1rem;
     font-weight: bold;
     color: rgb(13, 13, 13);
     background-color: rgba(194, 185, 233, 0.395);
-    border-radius: 15%;
+    border-radius: 20%;
     margin: 0 0 0 6%;
 }
 .buscador-button :hover {
     background-color: coral;
     cursor: pointer;
-    font-weight: bolder;
+    font-weight: bold;
 }
 .publ-centro {
     margin-top: 10px;
@@ -77,11 +77,11 @@ td {
     border: 1px solid black;
 }
 h2 {
-    font-size: 3em;
+    font-size: 2em;
     color: rgb(59, 14, 31);
 }
 h3 {
-    font-size: 150%;
+    font-size: 130%;
     margin: 5%;
     margin-top: 1%;
 }
@@ -104,7 +104,7 @@ span {
 ul {
     text-align: left;
 }
-.color-text-nav {
+.item {
     color: rgb(235, 82, 27);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
@@ -146,12 +146,12 @@ figcaption {
     transform: scale(1.3);
     overflow: hidden;
 }
-.img-parodi {
+.parodi img {
     display: inline;
-    width: 600px;
+    width: 46%;
     margin: 5px;
     border: 1px solid rgb(118, 101, 101);
-    border-radius: 5%;
+    border-radius: 10%;
 }
 .p_parodi {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
