@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/periódicos.jpeg" type="image/x-icon">
     <title>Diario Digital - Registro</title>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
 </head>
 <body>
     <header>
@@ -38,21 +39,30 @@
     <div>
         <form action="login.php" method="post">
             <h4>Datos personales</h4>
-            <p>Apellido y Nombre: <input type="text" name="nombre" placeholder="Apellido y Nombre"></p>
-            <p>Número de documento: <input type="text" name="DNI" placeholder="xx.xxx.xxx"></p>
-            <p>Fecha de nacimiento: <input type="date" name="nacimiento" ></p>
-            <p>Dirección: <input type="text" name="direccion" placeholder="Calle y nro."></p>
+            <p><label for="nombre">Apellido y Nombre: </label>
+            <input id="nombre" type="text" name="nombre" placeholder="Apellido y Nombre"></p>
+            <p><label for="DNI">Número de documento: </label>
+            <input id="DNI" type="text" name="DNI" placeholder="xx.xxx.xxx"></p>
+            <p><label for="nacimiento">Fecha de nacimiento: </label>
+            <input type="date" name="nacimiento" ></p>
+            <p><label for="direccion">Dirección: </label>
+            <input type="text" name="direccion" placeholder="Calle y nro."></p>
             <h4>Datos laborales</h4>
-            <p>Nombre de la empresa: <input type="text" name="empresa" placeholder="Empresa"></p>
-            <p>Actividad: <input type="text" name="actividad" placeholder="Actividad"></p>
-            <p>Dirección: <input type="text" name="direccion" placeholder="Calle y nro."></p>
-            <p>Observaciones: <textarea name="comentario" cols="30" rows="8"></textarea></p>
-            <input type="button" value="Registrarse">
+            <p><label for="empresa">Nombre de la empresa: </label>
+            <input type="text" name="empresa" placeholder="Empresa"></p>
+            <p><label for="actividad">Actividad: </label>
+            <input type="text" name="actividad" placeholder="Actividad"></p>
+            <p><label for="direccion">Dirección: </label>
+            <input type="text" name="direccion" placeholder="Calle y nro."></p>
+            <p><label for="comentario">Observaciones: </label>
+            <textarea name="comentario" cols="25" rows="5"></textarea></p>
+            <button onclick="registro();">Registrar</button>
+            <!-- <input type="button" value="Registrarse"> -->
         </form>
     </div>
     <footer class="foot">
         <h4>Gelato® Diario Digital - ©2024</h4>
     </footer>
-
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
