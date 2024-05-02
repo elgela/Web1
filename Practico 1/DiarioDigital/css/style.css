@@ -80,15 +80,15 @@ h2 {
     font-size: 2em;
     color: rgb(59, 14, 31);
 }
-h3 {
+/* h3 {
     font-size: 130%;
     margin: 5%;
     margin-top: 1%;
-}
-h4 {
+} */
+/* h4 {
     font-size: 110%;
     margin: 4%;
-}
+} */
 span {
     font-size: xx-large;
     font-weight: bolder;
@@ -194,4 +194,8 @@ figcaption {
     margin: 20px;
     border: 2px solid #fff;
     display: flex;
+}
+form p {
+    font-size: smaller;
+    
 }

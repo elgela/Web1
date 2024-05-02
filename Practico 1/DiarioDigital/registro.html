@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/periódicos.jpeg" type="image/x-icon">
+    <title>Diario Digital - Registro</title>
+</head>
+<body>
+    <header>
+        <img src="img/News.png" alt="logo" class="logotipo">
+        <div>
+            <a href="index.html" id="home">
+                <h1 class="titulo">Práctico 1 - HTML + CSS / Parte I y II</h1>
+            </a>
+        </div>
+    </header>
+    <div class="nav-bar">
+        <nav>
+            <ul class="lista-nav">
+                <li>
+                    <a href="index.html" class="item">Inicio</a>
+                    <a href="television.html" class="item">Televisión</a>
+                    <a href="deporte.html" class="item">Deporte</a>
+                    <a href="nosotros.html" class="item">Nosotros</a>
+                    <a href="registro.html" class="item">Regístrese</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- <div class="buscador">
+        <input type="text" placeholder="buscar...">
+        <div class="buscador-button">
+            <button>Enviar</button>
+        </div> -->
+    </div>
+    <div>
+        <form action="login.php" method="post">
+            <h4>Datos personales</h4>
+            <p>Apellido y Nombre: <input type="text" name="nombre" placeholder="Apellido y Nombre"></p>
+            <p>Número de documento: <input type="text" name="DNI" placeholder="xx.xxx.xxx"></p>
+            <p>Fecha de nacimiento: <input type="date" name="nacimiento" ></p>
+            <p>Dirección: <input type="text" name="direccion" placeholder="Calle y nro."></p>
+            <h4>Datos laborales</h4>
+            <p>Nombre de la empresa: <input type="text" name="empresa" placeholder="Empresa"></p>
+            <p>Actividad: <input type="text" name="actividad" placeholder="Actividad"></p>
+            <p>Dirección: <input type="text" name="direccion" placeholder="Calle y nro."></p>
+            <p>Observaciones: <textarea name="comentario" cols="30" rows="8"></textarea></p>
+            <input type="button" value="Registrarse">
+        </form>
+    </div>
+    <footer class="foot">
+        <h4>Gelato® Diario Digital - ©2024</h4>
+    </footer>
+
+</body>
+</html>
