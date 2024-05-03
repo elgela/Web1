@@ -9,5 +9,5 @@ function apagar() {
     document.querySelector("body").classList.add("apagado");
     document.querySelector("#lampara").src = "https://sites.google.com/a/alumnos.exa.unicen.edu.ar/tudai1-1/web-1/material/archivos/lampara_off.png";
 }
-document.querySelector("#prendido").addEventListener("click", prender);
-document.querySelector("#apagado").addEventListener("click", apagar);
+document.querySelector("#btnPrender").addEventListener("click", prender);
+document.querySelector("#btnApagar").addEventListener("click", apagar);
