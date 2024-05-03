@@ -20,7 +20,7 @@ function tirarDados() {
   document.getElementById("dado1").src = path + "dado1"+d1+".png"; //link externo
   document.getElementById("dado2").src =  path + "dado2"+d2+".png"; //link externo
   let suma = d1 + d2;
-  if (suma == 8){ //verificacion si es 8 e incremento cuenta
+  if (suma === 8){ //verificacion si es 8 e incremento cuenta
       document.getElementById("resultado").innerHTML = "salio el 8";
   }
 }
