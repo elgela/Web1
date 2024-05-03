@@ -1,0 +1,20 @@
+.prendido {
+    background-color: yellow;
+}
+
+.apagado {
+    background-color: black;
+}
+
+#lampara {
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 80px;
+    margin: 10px auto;
+    background-color: grey;
+}
+
+.botonera {
+    text-align: center;
+}
