@@ -14,3 +14,13 @@ let tresDiv = document.getElementById("div3").innerHTML = "Párrafo 3";
 let btn = document.getElementById("btn-nombreApellido");
 btn.addEventListener("click", textoFijo);
 //4//
+function buton1() {
+    alert("Botón 1");
+}
+function buton2() {
+    alert("Botón 2");
+}
+function buton3() {
+    alert("Botón 3");
+}
+//5//
