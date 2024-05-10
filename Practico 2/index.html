@@ -15,9 +15,27 @@
     <div id="div2"></div>
     <div id="div3"></div>
     <div>
-        <button onclick="buton1()" id="btn1">Botón 1</button>
-        <button onclick="buton2()" id="btn2">Botón 2</button>
-        <button onclick="buton3()" id="btn3">Botón 3</button>
+        <input type="button" onclick="buton1()" id="btn1" value="Botón 1"/>
+        <p id="boton1"></p>
+        <input type="button" onclick="buton2()" id="btn2" value="Botón 2"/>
+        <p id="boton2"></p>
+        <input type="button" onclick="buton3()" id="btn3" value="Botón 3"/>
+        <p id="boton3"></p>
+    </div>
+    <form action="" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre...">
+        <h2 class="nombre"></h2>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apelido" id="apellido" placeholder="Apellido...">
+        <input onclick="enviar()" type="button" value="Enviar">
+    </form>
+    <div>
+        <ul>
+            <li><input type="text" name="lista1" id="lista1" value="Texto 1"><button class="change">Cambio</button></li>
+            <li><input type="text" name="lista2" id="lista2" value="Texto 2"><button class="change">Cambio</button></li>
+            <li><input type="text" name="lista3" id="lista3" placeholder="Texto 3"><button>Cambio</button></li>
+        </ul>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
