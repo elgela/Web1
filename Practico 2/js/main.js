@@ -7,9 +7,9 @@ function textoFijo() {
 }
 textoFijo();
 //2//
-let unDiv = document.querySelector("#div1").innerHTML = "Párrafo 1";
-let dosDiv = document.querySelector("#div2").innerHTML = "Párrafo 2";
-let tresDiv = document.querySelector("#div3").innerHTML = "Párrafo 3";
+let unDiv = document.querySelector(".div1").innerHTML = "Párrafo 1";
+let dosDiv = document.querySelector(".div2").innerHTML = "Párrafo 2";
+let tresDiv = document.querySelector(".div3").innerHTML = "Párrafo 3";
 //3//
 let btn = document.querySelector("#btn-nombreApellido");
 btn.addEventListener("click", textoFijo);
@@ -31,9 +31,14 @@ function buton3() {
 }
 //5//
 function enviar() {
-    let nombre = document.querySelector(".nombre");
-    nombre.innerHTML = nombre;
-    let apellido = document.querySelector(".apellido").innerHTML = apellido;
+    let nodoNombre = document.querySelector(".txtNombre");
+    let nombre = nodoNombre.value;
+    console.log(nombre);
+    let nodoApell = document.querySelector(".txtApellido");
+    let apellido = nodoApell.value;
+    console.log(apellido);
+    let nombreApellido = document.querySelector(".h2");
+    nombreApellido.innerHTML = nombre + " " + apellido;
 }
-let buton = getElementById("nombre");
-buton.addEventListener("click", enviar);
+let btnEnvio = document.querySelector(".btn-enviar");
+btnEnvio.addEventListener("click", enviar);

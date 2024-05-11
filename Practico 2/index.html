@@ -11,24 +11,23 @@
 
 <body>
     <button  id="btn-nombreApellido">Nombre y Apellido</button>
-    <div id="div1"></div>
-    <div id="div2"></div>
-    <div id="div3"></div>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
     <div>
-        <input type="button" onclick="buton1()" id="btn1" value="Botón 1"/>
+        <input type="button" onclick="buton1()" id="input1" value="Botón 1"/>
         <p id="boton1"></p>
-        <input type="button" onclick="buton2()" id="btn2" value="Botón 2"/>
+        <input type="button" onclick="buton2()" id="input2" value="Botón 2"/>
         <p id="boton2"></p>
-        <input type="button" onclick="buton3()" id="btn3" value="Botón 3"/>
+        <input type="button" onclick="buton3()" id="input3" value="Botón 3"/>
         <p id="boton3"></p>
     </div>
-    <form action="" method="post">
+    <form>
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre...">
-        <h2 class="nombre"></h2>
+        <input type="text" name="nombre" class="txtNombre" placeholder="Nombre...">
         <label for="apellido">Apellido:</label>
-        <input type="text" name="apelido" id="apellido" placeholder="Apellido...">
-        <input onclick="enviar()" type="button" value="Enviar">
+        <input type="text" name="apelido" class="txtApellido" placeholder="Apellido...">
+        <button type="button" class="btn-enviar">Enviar</button>
     </form>
     <div>
         <ul>
@@ -36,6 +35,9 @@
             <li><input type="text" name="lista2" id="lista2" value="Texto 2"><button class="change">Cambio</button></li>
             <li><input type="text" name="lista3" id="lista3" placeholder="Texto 3"><button>Cambio</button></li>
         </ul>
+    </div>
+    <div>
+        <h2 class="h2"></h2>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>

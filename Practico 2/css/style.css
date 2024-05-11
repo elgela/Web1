@@ -1,12 +1,12 @@
-#btn1 {
+#input1 {
     background-color: rgb(83, 83, 209);
-    font-weight: bolder;
 }
-#btn2 {
+#input2 {
     background-color: brown;
-    font-weight: bolder;
 }
-#btn3 {
+#input3 {
     background-color: darkgreen;
-    font-weight: bolder;
+}
+div .btn {
+    font-weight: bolder;    
 }
