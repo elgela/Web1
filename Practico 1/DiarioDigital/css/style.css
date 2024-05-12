@@ -16,7 +16,7 @@ header {
     display: inline-flex;
     color: rgb(245, 241, 44);
     text-align: center;
-    background-image: url();
+    background-image: url("/img/fondo_continentes.avif");
     opacity: 80%;
     border-radius: 9px;
     padding: 15px;
