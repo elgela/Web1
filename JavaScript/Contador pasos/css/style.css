@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    background-color: rgb(44, 67, 110);
+}
+h1, h2 {
+    color: beige;
+}
+.pasos {
+    color: beige;
+}
+#btn-suma, #btn-resta, #btn-borrar {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    font-size: medium;
+    border-radius: 5px;
+    border: 1px solid black;
+}

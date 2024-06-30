@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo-cabaña-removebg-removebg-preview.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Disponibilidad-Reservas</title>
+</head>
+
+
+<body class="clear-mode">
+    <button id="mode-toggle">Modo oscuro</button>
+    <header>
+        <section>
+            <h1 class="titulo">Cabañas <span>Sierras de Ensueño</span><img class="logo"
+                    src="img/logo-cabaña-removebg-removebg-preview.png" alt="logo de cabañas"></h1>
+            <div class="btn-menu"><a>MENU</a></div>
+        </section>
+        <nav>
+            <div class="menu">
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="disponibilidad y reservas.html">Disponibilidad-Reservas</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="formulario">
+                <section>
+                    <h2>Agregar</h2>
+                    <form>
+                        <ul>
+                            <label>Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                            <label>Apellido</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                            <label>DNI</label>
+                            <input type="text" name="dni" id="dni" placeholder="DNI">
+                            <label>Teléfono</label>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                            <div>
+                                <input type="button" id="btn-agregar" value="Agregar">
+                            </div>
+                        </ul>
+                    </form>
+                    <h2>Cabañas</h2>
+                    <form>
+                        <ul>
+                            <label>Cabaña:</label>
+                            <select id="opciones">
+                                <option value="selected">Seleccione cabaña</option>
+                                <option id="pinar" value="Del Pinar">Del Pinar</option>
+                                <option id="puente" value="Del Puente">Del Puente</option>
+                                <option id="solar" value="Del Solar">Del Solar</option>
+                                <option id="casagrande" value="Casagrande">Casagrande</option>
+                            </select>
+                            <label>Fecha de Ingreso:</label>
+                            <input type="date" name="fechaIngreso" id="ingreso">
+                            <label>Fecha de Egreso</label>
+                            <input type="date" name="fechaEgreso" id="egreso">
+                            <label>Cantidad de personas</label>
+                            <select name="cant-personas" id="cant-personas">
+                                <option value="selected">Cantidad</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <input class="btn-consulte" type="button" id="consulte" value="Consulte">
+                        </ul>
+                    </form>
+                </section>
+            </div>
+            <div class="registro">
+                    <table id="tabla_formulario">
+                        <thead>
+                            <tr>
+                                <h2>Información</h2>
+                            </tr>
+                            <div>
+                                <input type="button" id="btn-consulta" value="Consulta">
+                            </div>
+                        </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+                <p class="respuesta"></p>
+            </div>
+        </div>
+    </main>
+    <div class="lateralDer">
+        <h2>Algo más que apacibles sierras</h2>
+        <p>Cuatro cabañas totalmente equipadas, independientes y de reciente construcción...cada una de ellas
+            con su propio entorno de vegetación. En su interior, numerosos detalles de confort y comodidad.</p>
+        <p>Ubicadas en una de las mejores zonas serranas de Tandil, en las laderas del Cerro El Centinela y a
+            solo 4 km. del centro de la ciudad.</p>
+        <div class="gps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20385.13928675722!2d-59.16675600000001!3d-37.348288!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sus!4v1716004032431!5m2!1ses!2sus"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Cabañas Sierras de Ensueño® Todos los derechos reservados ©2024</p>
+        <p>Contacto: <a href="https://wa.me/5492494020721" class="whatsapp" target="_blank">Gabriela</a>/ <a
+                href="https://wa.me/5492494357255" class="whatsapp" target="_blank">Marcelo</a></p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

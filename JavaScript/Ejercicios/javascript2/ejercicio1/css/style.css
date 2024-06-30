@@ -1,0 +1,14 @@
+#container {
+    background-color: aquamarine;
+    width: auto;
+    text-align: center;
+    display: none;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+.mostrar {
+    text-align: center;
+}
+label {
+    font-weight: bold;
+}

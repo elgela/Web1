@@ -1,0 +1,18 @@
+JSON: JavaScript Object Notation
+
+Vriables: guarda un único valor de un tipo primitivo
+Arreglos: guarda muchos valores de un mismo tipo, cada uno con una posición
+Objetos: guarda diferentes datos y de de distinto tipo
+
+console.table(arreglo): imprime por consola un arrego de objetos en forma de tabla
+
+
+*¿Que es JSON y como es su estructura?
+
+-Es un formato de almacenamiento e intercambio de datos y su estructura se basa en crear objetos.
+Es una forma de ancapsular variables y funciones (datos y comportamiento)
+//DOM es un "Modelo de OBJETOS del documento"//
+
+*¿Cómo se obtiene un único elemento del DOM? ¿Cómo se obtienen múltiples elementos del DOM?
+
+-Se obtienen consultando por ID, nombre, clase o selector. Se recorren como si fuera un árbol

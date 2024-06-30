@@ -15,19 +15,19 @@ let btn = document.querySelector("#btn-nombreApellido");
 btn.addEventListener("click", textoFijo);
 //4//
 function buton1() {
-    // let boton1 = document.querySelector("#boton1").innerHTML = "Botón 1";
-    // boton1.addEventListener("click");
-    alert("Botón 1");
+    let boton1 = document.querySelector("#boton1").innerHTML = "Botón 1";
+    boton1.addEventListener("click", buton1);
+    // alert("Botón 1");
 }
 function buton2() {
-    // let boton2 = document.querySelector("#boton2").innerHTML = "Botón 2";
-    // boton2.addEventListener("click");
-    alert("Botón 2");
+    let boton2 = document.querySelector("#boton2").innerHTML = "Botón 2";
+    boton2.addEventListener("click", buton2);
+    // alert("Botón 2");
 }
 function buton3() {
-    // let boton3 = document.querySelector("#boton3").innerHTML = "Botón 3";
-    // boton3.addEventListener("click");
-    alert("Botón 3");
+    let boton3 = document.querySelector("#boton3").innerHTML = "Botón 3";
+    boton3.addEventListener("click", buton3);
+    // alert("Botón 3");
 }
 //5//
 function enviar() {
@@ -37,7 +37,7 @@ function enviar() {
     let nodoApell = document.querySelector(".txtApellido");
     let apellido = nodoApell.value;
     console.log(apellido);
-    let nombreApellido = document.querySelector(".h2");
+    let nombreApellido = document.querySelector(".h1");
     nombreApellido.innerHTML = nombre + " " + apellido;
 }
 let btnEnvio = document.querySelector(".btn-enviar");

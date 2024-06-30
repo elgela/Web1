@@ -1,0 +1,14 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+li:hover { 
+    cursor: pointer;
+}
+.contenedor {
+    background-color: aquamarine;
+}
+.btn-load:hover {
+    cursor: pointer;
+}
