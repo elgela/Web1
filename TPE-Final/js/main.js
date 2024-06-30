@@ -172,13 +172,64 @@ async function enviarDatos() {
 document.querySelector("#btn-agregar").addEventListener("click", enviarDatos);
 
 /////////////PUT/////////////
-function modificarDato() {
+async function modificarDatos() {
+    // let nombre = document.querySelector("#nombre").value;
+    // let apellido = document.querySelector("#apellido").value;
+    // let dni = document.querySelector("#dni").value;
+    // let telefono = document.querySelector("#telefono").value;
 
+    // contenedor.innerHTML = "Ha sido agregado " + nombre + " " + apellido;
+    
+    let persona = {
+        "nombre": nombre,
+        "apellido": apellido,
+        "dni": dni,
+        "telefono": telefono
+    };
+
+    try {
+        let res = await fetch(urlPersonas, {
+            "method": "PUT",
+            "headers": {"Content-Type": "application/json"},
+            "body": JSON.stringify(persona)
+        });
+        let json = await res.json(); // JSON se hace objeto
+        console.log(json);
+        for (const personas of json) {
+            let nombre = personas.nombre;
+            let apellido = personas.apellido;
+            let dni = personas.dni;
+            let telefono = personas.telefono;
+            let id = personas.id;
+            lista.innerHTML += `<tr>
+                                <td>id:</td>
+                                <td>${id}</td>
+                                </tr>
+                                <tr>
+                                <td>Nombre:</td>
+                                <td>${nombre}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
+                                </tr>
+                                <tr>
+                                <td>Apellido:</td>
+                                <td>${apellido}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
+                                </tr>
+                                <tr>
+                                <td>DNI:</td>
+                                <td>${dni}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
+                                </tr>
+                                <td>Teléfono</td>
+                                <td>${telefono}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
+                                <input type="button" id="btn-eliminar" value="Eliminar">
+                                </tr>`;
+        }
+    } catch (error) {
+        console.log(error);
+    }
 }
-document.querySelector("#btn-modificar").addEventListener("click", modificarDato);
+document.querySelector("#btn-modificar").addEventListener("click", modificarDatos);
 ////////DELETE//////////
-async function borrarDato() {
+async function borrarDatos() {
 
 }
-document.querySelector("#btn-eliminar").addEventListener("click", borrarDato);
+document.querySelector("#btn-eliminar").addEventListener("click", borrarDatos);
 
