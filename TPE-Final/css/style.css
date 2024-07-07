@@ -1,5 +1,5 @@
  .container {
-    display: grid;
+    display: block;
     grid-template-areas:
     "header"
     "formulario"
@@ -10,7 +10,6 @@
 body.clear-mode {
     background-color: white;
     color: black;
-    /*agregado*/
     h2 {
         display: grid;
         background-color: rgb(153, 131, 69);
@@ -24,9 +23,11 @@ body.clear-mode {
 body.dark-mode {
     background-color: black;
     color: rgb(212, 207, 207);
-    /*agregado*/
     .titulo { 
         color: rgb(148, 162, 159);
+    }
+    header {
+        background-color: rgb(62, 55, 55);
     }
     h2 {
         display: grid;
@@ -38,19 +39,22 @@ body.dark-mode {
         display: flexbox;
         color: rgb(155, 175, 80);
     }
-       
+    .container {
+        background-color: rgba(143, 143, 141, 0.121);
+    }  
 }
 .logo {
-    display: flexbox;
-    width: 50%;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex   ; */
+    /* width: 50px; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     padding: 10px;
-    position: relative;
-    text-align: center;
+    /* position: relative; */
+    /* text-align: center; */
 }
 .menu {
     border: 1px solid rgb(171, 173, 41);
+    border-radius: 1px;
     width: 100%;
     display: flex;
     background-color: rgba(228, 229, 211, 0.689);
@@ -88,7 +92,7 @@ ul label {
     color: rgb(64, 89, 77);
 }
 ul.nav {
-    display: none;
+        display: none;
 }
 ul.nav.show {
     display: flex;
@@ -105,16 +109,45 @@ ul.nav li a {
     box-shadow: 2px 2px 2px;
 }
 .btn-menu {
-    display: inline;
+    display: block;
+}
+.btn-menu:hover {
+    cursor: pointer;
+}
+#menu-cerrar:not(:checked) {
+    display: none;
+}
+#menu-cerrar:checked {
+    display: block;
+}
+#menu-abrir {
+    text-align: right;
 }
 .btn-menu a {
     color: black;
     background-color: rgba(87, 138, 65, 0.634);
     margin: 5px;
-    padding: 2px;
+    padding: 2                                                                                                                                                                                                                                                      px;
     border: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.btn-inicio, .btn-reserva, .btn-servicios {
+    display: block;
+    color: rgb(86, 126, 54);
+    text-decoration: none;
+    background-color: rgb(238, 246, 235);
+    border-radius: 3px;
+    padding: 1px;
+    margin: 1px;
+    border: 1px solid;
+}
+.btn-inicio:hover, .btn-reserva:hover, .btn-servicios:hover {
+    transform: scale(1);
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgba(86, 108, 5, 0.578);
+}
+
 a {
     display: inline;
     color: rgb(86, 126, 54);
@@ -159,12 +192,14 @@ h3 {
     font-weight: bold;
 }
 .formulario {
+    display: inline-block;
+    margin: 5%;
+    width: 90%;
     font-size: small;
-    /* display: flexbox; */
-    /* text-align: center; */
     justify-content: center;
 }
 .formulario input {
+    width: 70%;
     font-size: small;
     border-radius: 5px;
     box-shadow: 3px 2px 2px grey;
@@ -179,9 +214,17 @@ label {
     font-size: large;
     font-weight: bold;
 }
-.formulario section form div ul label {
-    font-size: small;
-    justify-content: center;
+ul label {
+    font-size: xx-small;
+}
+.formulario button {
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px grey;
+}
+.informacion {
+    display: inline-block;
+    width: 90%;
+    margin: 5%;
 }
 .btn-envio {
     display: flexbox;
@@ -196,8 +239,8 @@ label {
     cursor: pointer;
 }
 .gps {
-    display: flexbox;
-    text-align: center;
+    display: block;
+    text-align: right;
 }
 .formulario-contacto {
     display: flexbox;
@@ -231,10 +274,15 @@ footer p {
     margin: 5px;
     padding: 5px;
 }
-td{
+td {
     padding: 15px;
 }
-
+.menu {
+    display: flex;
+    color: chartreuse;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >= 660px) {
 .container {

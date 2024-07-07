@@ -38,8 +38,10 @@ function alerta() {
 }
 
 function volverAtras() {
-    window.history.back();
+    window.history.go(-1);
 }
+let atras = document.querySelectorAll(".btn-volver");
+atras.forEach(e => e.addEventListener("click", volverAtras));
 
 let informacion = document.querySelector(".col-md-6");
 async function clickInformacion(event) {
@@ -56,4 +58,20 @@ async function clickInformacion(event) {
 }
 let info = document.querySelector(".btn-info");
 info.addEventListener("click", clickInformacion);
-///////////////revisar: vulve pero no tiene funcionamiento////////////////
+
+let acerca = document.querySelector(".col-md-6");
+async function clickAcerca(event) {
+    event.preventDefault();
+    try {
+        let response = await fetch("acerca.html")
+        if (response.ok) {
+            let text = await response.text()
+            acerca.innerHTML = text;
+        }
+    } catch (error) {
+        acerca.innerHTML = text;
+    }
+}
+let acercaDe = document.querySelector(".btn-acerca");
+acercaDe.addEventListener("click", clickAcerca);
+
