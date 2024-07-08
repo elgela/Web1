@@ -1,11 +1,14 @@
 "use strict";
 
+document.querySelector(".btn-menu").addEventListener("click", menu);
+
 function menu() {
     document.querySelector(".nav").classList.toggle("show");
 }
-document.querySelector(".btn-menu").addEventListener("click", menu);
+
 
 function mostrarNumero() {
+
     let num1 = Math.floor(Math.random() * 10) + 1;
     let num2 = Math.floor(Math.random() * 10) + 1;
     let num3 = Math.floor(Math.random() * 10) + 1;
@@ -15,8 +18,8 @@ function mostrarNumero() {
 
     return suma;
 }
-
 function verificar(resultado) {
+
     let respuesta = parseInt(document.querySelector("#respuesta").value);
 
     if (resultado === respuesta) {
@@ -26,7 +29,6 @@ function verificar(resultado) {
         document.querySelector("#resultado").innerHTML = "Respuesta incorrecta.";
     }
 }
-
 document.addEventListener("DOMContentLoaded", function () {
     let resultado = mostrarNumero();
     document.querySelector("#btn-captcha").addEventListener("click", function () {
