@@ -46,7 +46,7 @@
     </article>
     <h2>Contáctenos</h2>
     <article class="formulario-contacto">
-        <form id="datos"> <!--form en lugar de div-->
+        <div id="datos"> <!--form en lugar de div-->
             <div>
                 <label>Nombre: </label>
                 <input type="text" placeholder="Su nombre">
@@ -57,7 +57,7 @@
             </div>
             <div>
                 <label>e-mail: </label>
-                <input type="email" placeholder="Su correo electrónico">
+                <input type="email" placeholder="Correo electrónico">
             </div>
             <div>
                 <label>Repetir e-mail: </label>
@@ -65,20 +65,20 @@
             </div>
             <div>
                 <label>Teléfono / Celular: </label>
-                <input type="number" placeholder="Su número celular">
+                <input type="number" placeholder="Número celular">
             </div>
             <div>
                 <label>Consulta</label> <!--Motivo de la consulta-->
                 <textarea type="text"></textarea>
             </div>
-        </form>
+        </div>
         <h3>CAPTCHA</h3>
         <div class="suma">
             <div id="captcha"></div>
 
             <input type="text" id="respuesta" required>
 
-
+            
             <p id="resultado"></p>
         </div>
         <div>
