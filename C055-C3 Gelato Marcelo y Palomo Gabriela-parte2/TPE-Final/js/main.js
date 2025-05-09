@@ -6,9 +6,7 @@ function menu() {
     document.querySelector(".nav").classList.toggle("show");
 }
 
-
 function mostrarNumero() {
-
     let num1 = Math.floor(Math.random() * 10) + 1;
     let num2 = Math.floor(Math.random() * 10) + 1;
     let num3 = Math.floor(Math.random() * 10) + 1;
@@ -18,8 +16,8 @@ function mostrarNumero() {
 
     return suma;
 }
-function verificar(resultado) {
 
+function verificar(resultado) {
     let respuesta = parseInt(document.querySelector("#respuesta").value);
 
     if (resultado === respuesta) {
@@ -29,6 +27,7 @@ function verificar(resultado) {
         document.querySelector("#resultado").innerHTML = "Respuesta incorrecta.";
     }
 }
+
 document.addEventListener("DOMContentLoaded", function () {
     let resultado = mostrarNumero();
     document.querySelector("#btn-captcha").addEventListener("click", function () {
@@ -51,56 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-/////////////inicio///////////////////
-let paginaInicio = document.querySelector(".info");
-async function inicio(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("pagina-inicio.html")
-        if (response.ok) {
-            let text = await response.text()
-            paginaInicio.innerHTML = text;
-        }
-    } catch (error) {
-        paginaInicio.innerHTML = "<h2>Error!</h2>";
-    }
-}
-let ini = document.querySelector(".btn-inicio");
-ini.addEventListener("click", inicio);
-
-//////////////reservas////////////////
-let reserva = document.querySelector(".info");
-async function dispReserva(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("reservas.html")
-        if (response.ok) {
-            let text = await response.text()
-            reserva.innerHTML = text;
-        }
-    } catch (error) {
-        reserva.innerHTML = "<h2>Error!</h2>";
-    }
-}
-let res = document.querySelector(".btn-reserva");
-res.addEventListener("click", dispReserva);
-
-////////////servicios///////////////
-let servicio = document.querySelector(".info");
-async function servicios(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("servicios.html")
-        if (response.ok) {
-            let text = await response.text()
-            servicio.innerHTML = text;
-        }
-    } catch (error) {
-        servicio.innerHTML = "<h2>Error!</h2>";
-    }
-}
-let servi = document.querySelector(".btn-servicios");
-servi.addEventListener("click", servicios);
 
 /////GET cabanias////////////
 const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
@@ -132,7 +81,7 @@ async function datosCabanias(event) {
     }
 
 }
-document.querySelector("#btn-consulta").addEventListener("click", datosCabanias);
+document.querySelector("#consulte").addEventListener("click", datosCabanias);
 
 const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
 const contenedor = document.querySelector("#tabla_formulario");
@@ -159,19 +108,18 @@ async function datosPersonas(event) {
                                 </tr>
                                 <tr>
                                 <td>Nombre:</td>
-                                <td>${nombre}<input type="button" id="btn-editarNombre" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+                                <td>${nombre}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
                                 </tr>
                                 <tr>
                                 <td>Apellido:</td>
-                                <td>${apellido}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+                                <td>${apellido}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
                                 </tr>
                                 <tr>
                                 <td>DNI:</td>
-                                <td>${dni}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+                                <td>${dni}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
                                 </tr>
                                 <td>Teléfono</td>
-                                <td>${telefono}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
-                                <input type="button" id="btn-editar" value="Editar">
+                                <td>${telefono}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
                                 <input type="button" id="btn-eliminar" value="Eliminar">
                                 </tr>`;
         }
@@ -214,6 +162,7 @@ async function enviarDatos() {
 
         console.log(json);
         if (res.status === 201) {
+            document.querySelector("#msg").innerHTML += "Creado!";
             console.log("Creado!");
         }
     } catch (error) {
@@ -223,31 +172,13 @@ async function enviarDatos() {
 document.querySelector("#btn-agregar").addEventListener("click", enviarDatos);
 
 /////////////PUT/////////////
-let container = document.querySelector("#use-ajax");
-async function editarDato(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("editar.html")
-        if (response.ok) {
-            let text = await response.text()
-            contenedor.innerHTML = text;
-        }
-        else {
-            contenedor.innerHTML = text;
-        }
-    } catch (error) {
-        contenedor.innerHTML = "<h1>Error</h1>";
-    }
-}
-document.querySelector("#btn-editar").addEventListener("click", editarDato);
-////////DELETE DATO//////////
-async function borrarDato() {
-    
-}
-document.querySelector("#btn-borrar").addEventListener("click", borrarDato);
-///////////DELETE PERSONA/////////////////
-async function eliminarPersona() {
+function modificarDato() {
 
 }
-document.querySelector("#btn-eliminar").addEventListener("click", eliminarPersona);
+document.querySelector("#btn-modificar").addEventListener("click", modificarDato);
+////////DELETE//////////
+async function borrarDato() {
+
+}
+document.querySelector("#btn-eliminar").addEventListener("click", borrarDato);
 
